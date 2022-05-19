@@ -1,11 +1,9 @@
 package com.meeweel.pressureapp.ui
 
-import android.R
 import android.annotation.SuppressLint
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.meeweel.pressureapp.databinding.ActivityMainBinding
@@ -43,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.requestPosts()
     }
 
-    fun showNewItemDialog() {
+    private fun showNewItemDialog() {
         val dialog = Dialog(this)
         val filterBinding = NewItemDialogLayoutBinding.inflate(layoutInflater)
         dialog.setContentView(filterBinding.root)
