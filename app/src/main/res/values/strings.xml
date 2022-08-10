@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PressureApp</string>
+    <string name="default_data">25 октября</string>
+    <string name="default_time">23:54</string>
 </resources>
